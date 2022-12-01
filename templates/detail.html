@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Detail</title>
+</head>
+
+<body>
+  <center>
+    <h1><b>Название</b> - {{movie.title}}</h1>
+    <p><b>Описание</b> - {{movie.description}}</p>
+    <img src="{{movie.image.url}}" alt="" width="200" height="200">
+    <p><b>Дата выхода</b> - <i>{{movie.date}}</i></p>
+  </center>
+</body>
+
+</html>
